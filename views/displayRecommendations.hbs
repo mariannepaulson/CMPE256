@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>List of Hotels</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300|Open+Sans:700" />
+    <link rel="stylesheet" href="hotel.css" />
+</head>
+<body>
+<div class="page">
+{{> header}}
+
+<h1>{{pageTitle}}</h1>
+
+<table border="1">
+    <tr>
+        <th>Hotel Name</th>
+        <th>Average Rating</th>
+        <th>Total Reviews</th>
+        <th>Address</th>
+    </tr>
+
+    {{#each talent}}
+        <tr>
+            <td>{{this.Hotel_Name}}</td>
+            <td>{{this.Average_Score}}</td>
+            <td>{{this.Total_Number_of_Reviews}}</td>
+            <td>{{this.Hotel_Address}}</td>
+        </tr>
+    {{/each}}
+</table>
+
+{{> footer}}
+</div> <!-- end page -->
+</body>
+</html>
