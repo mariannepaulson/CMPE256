@@ -10,7 +10,7 @@ app.use(express.static(__dirname+'/public'));
 var modelMain = require("../models/modelMain");
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/hotelDB');
+var db = monk('localhost:27017/jobsDB');
 
 //MongoDB code
 app.use(function(req, res, next)
