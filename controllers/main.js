@@ -1,3 +1,3 @@
-module.exports.get_recommendation_page = function(req,res){
-  res.render('hotel.hbs', {currentYear: new Date().getFullYear()});
+module.exports.get_home_page = function(req,res){
+  res.render('home.hbs', {currentYear: new Date().getFullYear()});
 }

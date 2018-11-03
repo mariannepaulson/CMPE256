@@ -19,8 +19,6 @@ app.use(function(req, res, next)
     next();
 });
 
-router.get('/addHotels', modelMain.get_addHotels);
-router.get('/hotel', cntrMain.get_recommendation_page);
-router.post('/get_recommendation', modelMain.post_recommendation);
+router.get('/', cntrMain.get_home_page);
 
 module.exports = router;
